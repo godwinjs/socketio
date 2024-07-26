@@ -11,8 +11,10 @@ const io = new Server(server, {
     }
 })
 
-io.on('connection', () => {
+io.on('connection', (socket) => {
     console.log('socket connected..')
+
+    io.emit('message', {data: "user data"}, socket)
 })
 
 server.listen( 5001, () => {

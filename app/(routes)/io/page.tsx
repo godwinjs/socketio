@@ -11,6 +11,8 @@ const Page = () => {
         console.log('Nextjs client is connected...')
     })
 
+    // socket.on()
+
     return <div>Page</div>
 }
 
